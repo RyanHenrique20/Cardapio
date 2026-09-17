@@ -112,6 +112,13 @@ th {
     color: black;
 }
 
+tfoot {
+    background-color: rgb(172, 171, 171);
+    color: black;
+    height: 10px;
+    border-radius: 10px;
+}
+
 
 body {
     margin:0;

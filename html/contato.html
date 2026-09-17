@@ -15,9 +15,9 @@
     </header>
     <section>
         <nav>
-            <a class="navbar" href="../index.html">Início</a>
-            <a class="navbar" href="cardapio.html">Cardápio</a>
-            <a class="navbar" href="contato.html">Contato</a>
+            <a class="navbar" href="../index.html"><i>Início</i></a>
+            <a class="navbar" href="cardapio.html"><i>Cardápio</i></a>
+            <a class="navbar" href="contato.html"><i>Contato</i></a>
         </nav>
     </section>
    
@@ -26,7 +26,9 @@
             <div class="secao-formulario">
                 <div class="imagem-form"></div>
                 <div class="lado-formulario">
-                    <form class="formulario" action="confirmacao.html" method="post">
+                    <h2><i>Contato</i></h2>
+                <form class="formulario" action="contato.html" method="get">
+                        <input type="hidden" name="sucesso" value="true">
                         <label><b><i>Nome</i></b></label>
                         <input type="text" name="nome" required>
                         <label for="email"><b><i>E-mail</i></b></label>
@@ -40,10 +42,20 @@
         </section>
     <footer>
         <p>
-            Para saber mais sobre nosso endereço e horário de funcionamento,
-            acesse nossa página de <a href="contato.html">contato</a>.
+           <i>
+                Para saber mais sobre nosso endereço e horário de funcionamento,
+                acesse nossa página de <a href="contato.html">contato</a>.
+            </i>
         </p>
-        <p>2026 Restaurante Sabor & Arte</p>
+        <p><i>2026 Restaurante Sabor & Arte</i></p>
     </footer>
+    <script type="text/javascript">
+        const successParams = new URLSearchParams(window.location.search)
+        const send = successParams.get("sucesso");
+
+        if (send) {
+            alert('Mensagem enviada com sucesso! Em breve, entraremos em contato.');
+        }
+    </script>
 </body>
 </html>
