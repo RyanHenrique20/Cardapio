@@ -10,19 +10,19 @@
 
 <body>
     <header>
-        <h1>Restaurante Sabor & Arte</h1>
-        <p>O sabor que transforma momentos!</p>
+        <h1 id="titulo"><i>Restaurante Sabor & Arte</i></h1>
+        <p id="slogan"><i>O sabor que transforma momentos!</i></p>
     </header>
     <section>
         <nav>
-            <a href="index.html">Início</a>
-            <a href="cardapio.html">Cardápio</a>
-            <a href="contato.html">Contato</a>
+            <a class="navbar" href="../menu/index.html">Início</a>
+            <a class="navbar" href="../menu/html/cardapio.html">Cardápio</a>
+            <a class="navbar" href="../menu/html/contato.html">Contato</a>
         </nav>
     </section>
    
     <main>
-        <aside class="imagem_restaurante">
+        <section class="imagem_restaurante">
             <div class="card">
                 <div class="card-head">
                     <img  class="imagem" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="Interior de um restaurante">
@@ -42,13 +42,14 @@
                     <h2>Venha nos conhecer!</h2>
         
                     <p>
-                        Confira nosso <a href="cardapio.html">cardápio</a> e conheça
+                        Confira nosso cardápio e conheça
                         nossas deliciosas opções.
                     </p>
-                </div>
-            </div>
-        </aside>
-
+                    <br>
+                    <div class="botao-cardapio" onclick='window.location.assign("html/cardapio.html")'>
+                        <b><i>Conferir cardápio</i></b>
+                    </div>
+        </section>
     <footer>
         <p>
             Para saber mais sobre nosso endereço e horário de funcionamento,
@@ -56,7 +57,5 @@
         </p>
         <p>2026 Restaurante Sabor & Arte</p>
     </footer>
-
 </body>
-
 </html>
